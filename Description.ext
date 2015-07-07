@@ -1,0 +1,68 @@
+//**************************************************//
+// 					  Header
+//**************************************************//
+// These are displayed when users view the mission.
+// They can help players filter missions but
+// have no effect on the mission.
+//
+// gameType can be one of following:
+// 		DM - Death Match
+// 		CTF - Capture the Flag
+// 		FF - Flag Fight
+// 		Coop - Cooperative Mission
+// 		Team - Team Mission
+// 		Scont - Sector Control
+// 		Hold - Hold Location
+// 		Unknown - Unknown - is used when no class header is defined.
+//**************************************************//
+
+	class Header
+	{
+		gameType = Unknown;
+		minPlayers = 1;
+		maxPlayers = 1;
+	};
+	
+	
+//**************************************************//
+// 				    Meta Data
+//**************************************************//
+
+	//********************//
+	// Names of the mission authors.
+	//********************//
+	author="Siegen";
+	
+	//********************//
+	// Typically, the mission name.
+	//********************//
+	OnLoadName = "Operation: Scorpion";
+
+	//********************//
+	// Display a message while the mission loads.
+	// Typically a short summary of the mission.
+	// Maximum of three lines are shown.
+	//********************//
+	onLoadMission = "[ARCSEC] | ARCSECURITY.ORG";
+
+	//********************//
+	// Display a message while the intro loads.
+	//********************//
+	//onLoadIntro = "Intro Message.";
+
+	//********************//
+	// Show mission time and date while the mission loads. 
+	// 1 = visible, 0 = hidden.
+	//********************//
+	//onLoadMissionTime = 1;
+
+	//********************//
+	// Show mission time and date while the intro loads. 
+	// 1 = visible, 0 = hidden.
+	//********************//
+	//onLoadIntroTime = 1;
+
+	//********************//
+	// Picture to display while the mission loads.
+	//********************//
+	loadScreen =  "Main Logo.jpg";
